@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+.header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: auto;
+    max-width: 100%;
+}
+
+
+.image-preview {
+    margin-top: 10px;
+}
+
+.image-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .save-btn,
+    .cancel-btn {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .container {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .form-group input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .image-preview img {
+        width: 80px;
+        height: 80px;
+    }
+}

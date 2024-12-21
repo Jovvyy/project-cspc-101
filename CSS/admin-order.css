@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F2AA4CFF;
+    color: black;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap; 
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+header .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .business-name {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+header .header-links .nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header .header-links .nav-link:hover {
+    background-color: #85808093;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.orders-container {
+    margin-top: 20px;
+    overflow-x: auto; 
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table th, .orders-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.orders-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.orders-table td {
+    background-color: #fff;
+    color: #555;
+}
+
+.orders-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.orders-table ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.orders-table li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.orders-container p {
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.done-btn, .delete-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.done-btn {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.done-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336; 
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+    header .header-content {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    header .logo-container {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .orders-table {
+        font-size: 0.9rem; 
+    }
+
+    .orders-table th, .orders-table td {
+        padding: 8px; 
+    }
+
+    .done-btn, .delete-btn {
+        padding: 8px 16px; 
+    }
+
+    .orders-table {
+        width: 100%;
+        font-size: 0.9rem; 
+    }
+
+    .orders-container {
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
+
+    .orders-table ul {
+        padding-left: 0;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        height: 30px; 
+    }
+
+    .orders-table th, .orders-table td {
+        padding: 6px; 
+        font-size: 0.8rem; 
+    }
+
+    .done-btn, .delete-btn {
+        padding: 8px 14px; 
+    }
+
+    .orders-table {
+        font-size: 0.8rem; 
+    }
+
+    .orders-table ul {
+        padding-left: 10px; 
+    }
+
+    .orders-container {
+        margin-bottom: 10px;
+    }
+}
+

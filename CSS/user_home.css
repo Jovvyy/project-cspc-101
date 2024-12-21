@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: black;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2AA4CFF;
+    padding: 20px 30px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+}
+
+.Logo-BusinessName-div {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px; 
+}
+
+.business-name {
+    font-size: 24px; 
+    color: black;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; 
+    letter-spacing: 2px; 
+}
+
+.HSAC {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%; 
+    font-size: 20px; 
+}
+
+.a-link {
+    text-decoration: none;
+    color: black; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.home, .shop, .contact, .logout {
+    padding: 12px 20px; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    margin: 0 8px; 
+}
+
+.home:hover, .shop:hover, .contact:hover {
+    color: #26b6a3; 
+    transform: translateY(-3px); 
+}
+
+.logout:hover {
+    color: #e76464; 
+    transform: translateY(-3px); 
+}
+
+
+.home:active, .shop:active, .contact:active, .logout:active {
+    transform: translateY(2px); 
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.greetings, .greetings-2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+span {
+    position: relative;
+}
+
+span::before {
+    content: "StreetHustler";
+    position: absolute;
+    color: #26b6a3;
+    animation: filling 6.5s linear infinite;
+    width: 0;
+    overflow: hidden;
+}
+
+@keyframes filling {
+    0% { width: 0%; }
+    50% { width: 100%; }
+    100% { width: 0%; }
+}
+
+
+.shop-now-button {
+    padding: 12px 35px;
+    background-color: #26b6a3;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shop-now-button:hover {
+    background-color: #1d9e90;
+    transform: scale(1.1);
+}
+
+.shop-now-button:active {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .HSAC {
+        flex-direction: column;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .logo-header {
+        width: 50px;
+        height: 50px;
+    }
+
+    .business-name {
+        font-size: 24px;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+
+    .greetings, .greetings-2 {
+        font-size: 28px;
+    }
+
+    .shop-now-button {
+        width: 80%; 
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .greetings, .greetings-2 {
+        font-size: 24px;
+    }
+
+    .shop-now-button {
+        width: 90%; 
+        font-size: 14px;
+    }
+}

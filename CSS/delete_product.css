@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+.header {
+    text-align: center;
+    background-color: #f44336;
+    color: white;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.delete-confirmation {
+    text-align: center;
+}
+
+.delete-confirmation h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.delete-confirmation p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.delete-confirmation img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .delete-confirmation h2 {
+        font-size: 20px;
+    }
+
+    .delete-confirmation p {
+        font-size: 16px;
+    }
+
+    .delete-confirmation img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .form-container {
+        gap: 12px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .container {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .delete-confirmation h2 {
+        font-size: 18px;
+    }
+
+    .delete-confirmation p {
+        font-size: 14px;
+    }
+
+    .delete-confirmation img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .form-container {
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
